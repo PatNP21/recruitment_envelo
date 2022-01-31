@@ -88,11 +88,13 @@ label {
     line-height: 7vh;
     margin:0 5%;
     width:40%;
+    border: 1px solid aliceblue;
 }
 
 .getAnotherPack {
     height:7vh;
     line-height: 7vh;
-    margin:0 5%;
+    margin:0 4%;
     width:40%;
+    border: 1px solid aliceblue;
 }

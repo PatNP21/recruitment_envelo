@@ -50,6 +50,10 @@ const enableGetPackButton = () => {
     }
 }
 
+const showDialog = () => {
+    dialogWindow.style['display'] = 'block'
+}
+
 inputNrTel.addEventListener('change', () => { //wprowadzenie zmian do inputu dla numeru telefonu 
     console.log('input zmienia wartość')
     validation_nrTel()
@@ -64,7 +68,7 @@ inputCode.addEventListener('change', () => { //wprowadzenie zmian do inputu dla 
 submitButton.addEventListener('click', () => { //naciśnięcie przycisku odpowiadającego za odebranie paczki
     localStorage.setItem('numerTelefonu', inputNrTel.value) //zapisanie wartości 'numer telefonu' w pamięci lokalnej przeglądarki
     localStorage.setItem('kod', inputCode.value) //zapisanie wartości 'kod' w pamięci lokalnej przeglądarki
-    dialogWindow.style['display'] = 'block' //wyświetlenie okna dialogowego
+    setTimeout(showDialog, 1000) //wyświetlenie okna dialogowego
 })
 
 thatsAll.addEventListener('click', () => { // 'wszystko na dzis', naciśnięie przycisku wywołuje zniknięcie okna dialogowego

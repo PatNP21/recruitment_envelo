@@ -1,0 +1,97 @@
+body {
+    background-color: gray;
+    font-family: Arial;
+    font-weight: 200;
+}
+
+#container {
+    width:50vw;
+    height:75vh;
+    transform: translate(50%, 10%);
+    align-items: center;
+}
+
+h3 {
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5vh;
+    font-weight: 200;
+}
+
+p {
+    text-align: center;
+}
+
+.button {
+    float: left;
+    background-color: red;
+    text-align: center;
+    border: none;
+}
+
+.getPack {
+    width:50%;
+    height:10vh;
+    line-height: 10vh;
+}
+
+#container > .button {
+    margin-left: 25%;
+    margin-top: 3vh;
+}
+
+form {
+    width: 76%;
+    margin-left: 12%;
+}
+
+.inputPosition {
+    float: left;
+    width: 40%;
+}
+
+.inputPosition:first-of-type {
+    margin-right: 10%;
+}
+
+.inputPosition:last-of-type {
+    margin-left: 10%;
+}
+
+input {
+    width: 90%;
+    height:4vh;
+    text-align: center;
+}
+
+label {
+    font-size: 10px;
+}
+
+/*DIALOG WINDOW*/
+
+#dialogWindow {
+    border:1px solid black;
+    width:40%;
+    min-height:70%;
+    transform: translate(80%, -400%);
+    background: rgba(88, 87, 87, 1);
+    z-index: 1;
+    display: none;
+}
+
+.thatsAll {
+    height:7vh;
+    line-height: 7vh;
+    margin-left: 10%;
+    width:30%;
+}
+
+.getAnotherPack {
+    height:7vh;
+    line-height: 7vh;
+    margin-left: 10%;
+    width:30%;
+}

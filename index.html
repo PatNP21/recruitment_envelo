@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zadanie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h3>Envelo</h3>
+
+            <p>Możesz mieć swoją przesyłkę w kilkanaście sekund.</p>
+            <p>Rozpocznij wciskając przycisk.</p>
+
+            <form>
+                <div class="inputPosition">
+                    <label>Numer telefonu</label>
+                    <input id="input1" type="text" maxlength="9" required size="9">
+                </div>
+                <div class="inputPosition">
+                    <label>Kod odbioru</label>
+                    <input id="input2" type="text" maxlength="4" required size="4">
+                </div>
+            </form>
+            <button class="button getPack">Odbierz paczkę</button>
+        </div>
+
+        <div id="dialogWindow">
+            <p class="header">Paczka odebrana</p>
+            <p>Zrobiłeś to w czasie 10 sekund? Czy możemy zrobić dla ciebie coś jeszcze</p>
+            <button class="button thatsAll">To wszystko na dziś</button>
+            <button class="button getAnotherPack">Odbierz kolejną paczkę</button>
+        </div>
+        <script src="zadanie.js" async defer></script>
+    </body>
+</html>
